@@ -1,0 +1,52 @@
+#register-complete-container {
+    width: 100vw;
+    height: 100vh;
+    background: #8257E5;
+    background-image: url('../../assets/images/success-background.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.components {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.components h1 {
+    font-family: 'Archivo';
+    font-size: 5.4rem;
+    color: #FFF;
+    font-weight: bold;
+    line-height: 4.2rem;
+
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.components p {
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    text-align: center;
+    color: #D4C2FF;
+    margin-bottom: 10rem;
+}
+
+.components button {
+    width: 19.7rem;
+    height: 5.6rem;
+
+    background: #04D361;
+    border: none;
+    border-radius: 8px;
+
+    color: #FFF;
+}

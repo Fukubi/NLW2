@@ -1,0 +1,68 @@
+.splash {
+    width: 100vw;
+    height: 60vh;
+    padding: 0;
+    margin: 0;
+    background-color: #8257E5;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.splash img {
+    position: absolute;
+}
+
+.backgroundeffect {
+    width: 100%;
+    height: 97%;
+    top: 1rem;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo img {
+    width: 91%;
+    height: 100%;
+    padding-left: 5rem;
+    padding-bottom: 5rem;
+}
+
+.logo h2 {
+    color: #D4C2FF;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 3.2rem;
+    position: absolute;
+    top: 27rem;
+    left: 5rem;
+    width: 300px;
+}
+
+@media(min-width: 700px) {
+    .splash {
+        width: 60vw;
+        height: 100vh;
+    }
+
+    .backgroundeffect {
+        width: 100%;
+        height: 90%;
+
+        padding-top: 15rem;
+    }
+
+    .logo img,
+    .logo h2 {
+        margin-left: 27%;
+        margin-top: 20%;
+    }
+
+    .logo img {
+        width: 50%;
+        height: 50%;
+    }
+}

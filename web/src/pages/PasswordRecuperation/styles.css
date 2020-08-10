@@ -1,0 +1,90 @@
+#recuperation-page {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#recuperation-page .splash {
+    width: 100vw;
+    height: 56vh;
+}
+
+.header h2 {
+    margin-bottom: 2rem;
+}
+
+.header p {
+    margin-bottom: 2rem;
+}
+
+#password-recuperation-container {
+    width: 100vw;
+    height: 44vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#password-recuperation-container .backicon {
+    position: absolute;
+    top: 2rem;
+    left: 9rem;
+}
+
+#password-recuperation-container .email input {
+    width: 35.2rem;
+    height: 7.2rem;
+
+    background-color: #FAFAFC;
+
+    border: 1px solid #E6E6F0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins';
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 24px;
+    border-radius: 8px;
+
+    padding-left: 2rem;
+    margin-bottom: 3rem;
+}
+
+#password-recuperation-container .email .inputContainer .input::placeholder {
+    color: #9C98A6
+}
+
+#password-recuperation-container .email .inputContainer .input {
+    position: relative;
+}
+
+#password-recuperation-container .email .inputContainer:focus-within::after {
+    height: 5.5%;
+    width: 4px;
+    content: '';
+    background: var(--color-primary-light);
+    position: absolute;
+    top: 47.2rem;
+}
+
+@media(min-width: 700px) {
+    #recuperation-page {
+        flex-direction: row;
+    }
+
+    #recuperation-page .splash {
+        width: 56vw;
+        height: 100vh;
+    }
+
+    #password-recuperation-container {
+        width: 44vw;
+        height: 100vh;
+
+
+    }
+}
