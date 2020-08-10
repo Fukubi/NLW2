@@ -1,0 +1,227 @@
+#register-page {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#register-page .splash {
+    width: 100vw;
+    height: 42vh;
+}
+
+#register-page .splash h2 {
+    padding-top: 0rem;
+}
+
+#register-container .backicon {
+    position: absolute;
+    margin-right: 30rem;
+    margin-bottom: 80rem;
+}
+
+#register-container .header {
+    display: flex;
+    flex-direction: column;
+    margin-right: 13.3rem;
+    margin-bottom: 2rem;
+}
+
+#register-container .header h2 {
+    font-family: 'Poppins';
+    color: #32264D;
+    font-size: 3.6rem;   
+}
+
+#register-container .header p {
+    font-family: 'Poppins';
+    color: #6A6180;
+    font-size: 1.6rem;
+
+    width: 100%;
+}
+
+#register-container {
+    width: 100vw;
+    height: 58vh;
+
+    background-color: #E5E5E5;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+
+#register-container .name input {
+    width: 35.2rem;
+    height: 7.2rem;
+
+    background-color: #FAFAFC;
+
+    border: 1px solid #E6E6F0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins';
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 24px;
+
+    padding-left: 2rem;
+    border-radius: 8px 8px 0px 0px;
+}
+
+#register-container .name .inputContainer .input::placeholder {
+    color: #9C98A6
+}
+
+#register-container .name .inputContainer .input {
+    position: relative;
+}
+
+#register-container .name .inputContainer:focus-within::after {
+    height: 5.5%;
+    width: 4px;
+    content: '';
+    background: var(--color-primary-light);
+    position: absolute;
+    top: 36.4rem;
+}
+
+#register-container .second-name input {
+    width: 35.2rem;
+    height: 7.2rem;
+
+    background-color: #FAFAFC;
+
+    border: 1px solid #E6E6F0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins';
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 24px;
+
+    padding-left: 2rem;
+}
+
+#register-container .second-name .inputContainer .input::placeholder {
+    color: #9C98A6
+}
+
+#register-container .second-name .inputContainer .input {
+    position: relative;
+}
+
+#register-container .second-name .inputContainer:focus-within::after {
+    height: 5.5%;
+    width: 4px;
+    content: '';
+    background: var(--color-primary-light);
+    position: absolute;
+    top: 43.6rem;
+}
+
+#register-container .email input {
+    width: 35.2rem;
+    height: 7.2rem;
+
+    background-color: #FAFAFC;
+
+    border: 1px solid #E6E6F0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins';
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 24px;
+
+    padding-left: 2rem;
+}
+
+#register-container .email .inputContainer .input::placeholder {
+    color: #9C98A6
+}
+
+#register-container .email .inputContainer .input {
+    position: relative;
+}
+
+#register-container .email .inputContainer:focus-within::after {
+    height: 5.5%;
+    width: 4px;
+    content: '';
+    background: var(--color-primary-light);
+    position: absolute;
+    top: 51rem;
+}
+
+.passwordContainer:focus-within::after {
+    height: 76%;
+    width: 4px;
+    content: '';
+    background: var(--color-primary-light);
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+#register-container .password::placeholder {
+    color: #9C98A6
+}
+
+#register-container .password {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+#register-container .password:focus-within::after {
+    height: 4%;
+    width: 4px;
+    content: '';
+    background: var(--color-primary-light);
+    position: absolute;
+    top: 34.7rem;
+}
+
+form .submitButton {
+    background-color: #04D361;
+    border-radius: 8px;
+
+    border: none;
+    width: 35.2rem;
+    height: 5.6rem;
+    color: #FFF;
+}
+
+form .clickSubmitButton {
+    background-color: #04D361;
+    border-radius: 8px;
+
+    border: none;
+    width: 35.2rem;
+    height: 5.6rem;
+    color: #FFF;
+}
+
+@media(min-width: 700px) {
+    #register-page {
+        flex-direction: row;
+    }
+
+    #register-container {
+        width: 45vw;
+        height: 100vh;
+
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    #register-page .splash {
+        width: 55vw;
+        height: 100vh;
+    }
+}

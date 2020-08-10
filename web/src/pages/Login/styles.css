@@ -1,0 +1,302 @@
+#container {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.splash {
+    width: 100vw;
+    height: 60vh;
+    padding: 0;
+    margin: 0;
+    background-color: #8257E5;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.splash img {
+    position: absolute;
+}
+
+.backgroundeffect {
+    width: 100%;
+    height: 97%;
+    top: 1rem;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo img {
+    width: 91%;
+    height: 100%;
+    padding-left: 5rem;
+    padding-bottom: 5rem;
+}
+
+.logo h2 {
+    color: #D4C2FF;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 3.2rem;
+    position: absolute;
+    top: 27rem;
+    left: 5rem;
+    width: 300px;
+}
+
+
+/* Estilização da tela de login */
+
+.login {
+    width: 100vw;
+
+    background-color: #E5E5E5;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+
+.login h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    color: #32264D;
+
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+}
+
+.login form {
+    margin-bottom: -20rem;
+}
+
+.login form .formInputs {
+    padding-bottom: 2rem;
+}
+
+.login form .formInputs input {
+    width: 35.2rem;
+    height: 7.2rem;
+
+    background-color: #FAFAFC;
+
+    border: 1px solid #E6E6F0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins';
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 24px;
+
+    padding-left: 2rem;
+}
+
+.login form .formInputs .emailInput {
+    border-radius: 8px 8px 0px 0px;
+}
+
+.login form .formInputs .emailInput::placeholder,
+.login form .formInputs .passwordInput::placeholder {
+    color: #9C98A6
+}
+
+.emailContainer {
+    position: relative;
+}
+
+.emailContainer:focus-within::after {
+    height: 70%;
+    width: 4px;
+    content: '';
+    background: var(--color-primary-light);
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.passwordContainer {
+    position: relative;
+}
+
+.passwordContainer:focus-within::after {
+    height: 70%;
+    width: 4px;
+    content: '';
+    background: var(--color-primary-light);
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.login form .formInputs .passwordInput {
+    border-radius: 0px 0px 8px 8px;
+}
+
+.login form .formInputs .passwordContainer button {
+    position: relative;
+    margin-left: -4rem;
+    background-color: transparent;
+    border: none;
+}
+
+/* Customize the label (the container) */
+.checkboxContainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: -3px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    font-family: 'Poppins';
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: #9C98A6;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .checkboxContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #FAFAFC;
+    border-radius: 8px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .checkboxContainer:hover input ~ .checkmark {
+    background-color: #FAFAF0;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .checkboxContainer input:checked ~ .checkmark {
+    background-color: #04D361;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .checkboxContainer input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .checkboxContainer .checkmark:after {
+    left: 10px;
+    top: 6.3px;
+    width: 3px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+form a {
+    text-decoration: none;
+    color: #9C98A6;
+
+    padding-left: 6rem;
+}
+
+.passrem {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 3rem;
+}
+
+form .submitButton {
+    background-color: #DCDCE6;
+    border-radius: 8px;
+
+    border: none;
+    width: 35.2rem;
+    height: 5.6rem;
+}
+
+form .clickSubmitButton {
+    background-color: #04D361;
+    border-radius: 8px;
+
+    border: none;
+    width: 35.2rem;
+    height: 5.6rem;
+    color: #FFF;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 35rem;
+}
+
+.footer .register {
+    margin-right: 12rem;
+}
+
+@media (min-width: 700px) {
+    #container {
+        flex-direction: row;
+    }
+
+    .splash {
+        width: 60vw;
+        height: 100vh;
+    }
+
+    .backgroundeffect {
+        width: 100%;
+        height: 90%;
+
+        padding-top: 15rem;
+    }
+
+    .logo img,
+    .logo h2 {
+        margin-left: 27%;
+        margin-top: 20%;
+    }
+
+    .logo img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .login {
+        width: 40vw;
+        height: 100vh;
+
+        justify-content: center;
+    }
+}
